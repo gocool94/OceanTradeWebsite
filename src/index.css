@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 20% 18%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 20% 18%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 20% 18%;
+    --primary: 210 75% 17%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 35 80% 45%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 10% 95%;
+    --muted-foreground: 210 5% 45%;
+    --accent: 35 80% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 10% 90%;
+    --input: 210 10% 90%;
+    --ring: 210 75% 17%;
+    --radius: 0.5rem;
+
+    --navy: #0A2B4C;
+    --navy-light: #112D4E;
+    --amber: #D4830C;
+    --amber-light: #E8A023;
+    --text-dark: #2D3436;
+    --text-gray: #636E72;
+    --border-color: #DFE6E9;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    background: #ffffff;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .font-script {
+    font-family: 'Great Vibes', cursive;
+  }
+
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .text-navy {
+    color: var(--navy);
+  }
+
+  .text-amber {
+    color: var(--amber);
+  }
+
+  .bg-navy {
+    background-color: var(--navy);
+  }
+
+  .bg-amber {
+    background-color: var(--amber);
+  }
+
+  .bg-amber-light {
+    background-color: var(--amber-light);
+  }
+
+  .bg-navy-light {
+    background-color: var(--navy-light);
+  }
+
+  .border-amber {
+    border-color: var(--amber);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--navy);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--amber);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--amber);
+  color: white;
+}
