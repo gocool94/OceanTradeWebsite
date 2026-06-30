@@ -1,4 +1,3 @@
-import devServer from "@hono/vite-dev-server"
 import path from "path"
 const __dirname = import.meta.dirname
 import react from "@vitejs/plugin-react"
@@ -6,14 +5,11 @@ import { defineConfig } from "vite"
 import { inspectAttr } from 'kimi-plugin-inspect-react'
 
 // https://vite.dev/config/
-export default defineConfig(({ command }) => ({
+export default defineConfig({
   plugins: [
-    command === 'serve'
-      ? devServer({ entry: "./api/boot.ts", exclude: [/^\/(?!api\/).*$/] })
-      : null,
     inspectAttr(),
     react(),
-  ].filter(Boolean),
+  ],
   server: {
     port: 3000,
   },
@@ -30,4 +26,4 @@ export default defineConfig(({ command }) => ({
     outDir: path.resolve(__dirname, "dist/public"),
     emptyOutDir: true,
   },
-}));
+});
