@@ -161,7 +161,7 @@ export default function Footer() {
                     href="mailto:oceantrade.logistics@gmail.com"
                     className="hover:underline"
                   >
-                    oceantrade.logistics@gmail.com
+                    sajith@ologline.com
                   </a>
                 </p>
                 <div className="mt-4 pt-4 border-t border-[#0A2B4C]/20">
