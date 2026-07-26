@@ -222,7 +222,7 @@ export default function Contact() {
                 </p>
                 <p className="font-body text-sm text-white/90">
                   <span className="font-medium">Email:</span>{' '}
-                  oceantrade.logistics@gmail.com
+                  oceantradelogistics@gmail.com
                 </p>
                 <p className="font-body text-sm text-white/90">
                   <span className="font-medium">Address:</span>{' '}
