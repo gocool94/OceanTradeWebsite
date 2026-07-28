@@ -191,8 +191,16 @@ export default function Footer() {
             Copyright {new Date().getFullYear()} — Ocean Trade and Logistics | All Rights Reserved
           </p>
           <p className="font-body text-xs text-white/60">
-            Made with love by Magran IT Consulting
-          </p>
+  Made with love by{' '}
+  <a
+    href="https://www.magranitconsulting.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:underline"
+  >
+    Magran IT Consulting
+  </a>
+</p>
         </div>
       </div>
     </footer>
